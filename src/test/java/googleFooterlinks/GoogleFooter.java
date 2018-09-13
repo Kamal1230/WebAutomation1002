@@ -18,13 +18,12 @@ public class GoogleFooter {
 		        driver.findElement(By.xpath("//*[@id=\"gb_70\"]"));
 		        driver.manage().window().maximize();
 		        driver.get("https://accounts.google.com/ServiceLogin?");
-		        driver.findElement(By.id("identifierId")).sendKeys("kamla@gmail.com");
+		        driver.findElement(By.id("identifierId")).sendKeys("kamal@gmail.com");
 		        driver.findElement(By.id("identifierNext")).click();
 		        driver.findElement(By.xpath("//input[@aria-label='Enter your password' and @name='password']")).sendKeys("password656");
-		        Thread.sleep(200);
-		        driver.findElement(By.id("passwordNext")).click();
+		     
 		        
 		        Thread.sleep(2000);
-		        driver.close();
+		        driver.quit();
 		    }
 		}
